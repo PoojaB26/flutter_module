@@ -13,6 +13,7 @@ workflows:
       - flutter build aar -v
     artifacts:
       - build/**/outputs/**/*.aar
+      - build/host/outputs/repo
 
     publishing:
       email:
