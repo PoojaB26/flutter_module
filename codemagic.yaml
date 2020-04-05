@@ -1,0 +1,20 @@
+# Automatically generated on 2020-04-05 UTC from https://codemagic.io/app/5e892f8e64e0bd233d622d05/settings
+# Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
+
+workflows:
+  default-workflow:
+    name: AARBuilds
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - flutter packages pub get
+      - flutter build aar -v
+    artifacts:
+      - build/**/outputs/**/*.aar
+
+    publishing:
+      email:
+        recipients:
+          - pbhaumik26@gmail.com
