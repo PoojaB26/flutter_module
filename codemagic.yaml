@@ -12,7 +12,7 @@ workflows:
       - flutter packages pub get
       - flutter build aar -v
     artifacts:
-      - build/**/outputs/**/*.aar
+#      - build/**/outputs/**/*.aar
       - build/host/outputs/repo
 
     publishing:
